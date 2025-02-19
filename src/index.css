@@ -34,7 +34,7 @@ button {
   background: #000000;
   border: 1px solid #ffffff;
   text-shadow: 0 0 0px #ffffffab, 0 0 10px #ffffff, 0 0 20px #ffffff;
-  box-shadow: 0 0 10px #6a00ff, 0 0 20px #ffffff, 0 0 30px #008cff,
+  box-shadow: 0 0 9px #6a00ff, 0 0 20px #ffffff, 0 0 30px #008cff,
     0 0 60px #84ff00;
 }
 

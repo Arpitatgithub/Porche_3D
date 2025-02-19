@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 
 export default function CarModel() {
-  const { scene } = useGLTF("/911.glb");
+  const { scene } = useGLTF("porsche.glb");
   const carRef = useRef();
 
   useFrame(({ pointer }) => {

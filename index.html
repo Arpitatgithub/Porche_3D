@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <style>
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: poppins, Verdana, sans-serif;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+            backdrop-filter: blur(10px);
+            /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-family:poppins;
+            /* font-weight: bold; */
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 45px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #f1c40f;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">Porsche 3D</div>
+      <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Models</a></li>
+          <li><a href="#">About</a></li>
+          <button id="btn">Button</button>
+      </ul>
+  </nav>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0); /* Set background */
+  font-family: Helvetica, Verdana, sans-serif;
+}
+
+canvas {
+  display: block;
+}
+/* From Uiverse.io by zjssun */ 
+button {
+  padding: 2.5px 15px;
+  text-transform: uppercase;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff;
+  transition: 0.3s ease;
+  user-select: none;
+}
+
+#btn:hover,
+:focus {
+  color: #ffffff;
+  background: #000000;
+  border: 1px solid #ffffff;
+  text-shadow: 0 0 0px #ffffffab, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 10px #6a00ff, 0 0 20px #ffffff, 0 0 30px #008cff,
+    0 0 60px #84ff00;
+}
+
+
+
+
+
+
+
+
+
+
+
+

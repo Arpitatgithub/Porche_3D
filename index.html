@@ -56,31 +56,10 @@
         .nav-links a:hover {
             color: #ffffff;
         }
-    </style>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="logo">Porsche.3D</div>
-      <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Models</a></li>
-          <li><a href="#">About</a></li>
-          <button id="btn">Contact</button>
-      </ul>
-    </nav>
 
-    <!-- 3D Model Section -->
-    <div id="root"></div>
 
-    <!-- Heading Below 3D Model -->
-    <section class="bottom-heading">
-        <h1>Experience Performance Like Never Before</h1>
-    </section>
 
-    <script type="module" src="/src/main.jsx"></script>
 
-    <style>
         /* General Reset */
         * {
             margin: 0;
@@ -151,6 +130,165 @@
             font-weight: bold;
         }
     </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Porsche.3D</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Models</a></li>
+            <li><a href="#">About</a></li>
+            <button id="btn1">Contact</button>
+        </ul>
+    </nav>
+
+    <!-- 3D Model (First Section) -->
+    <div id="root"></div>
+    <h2 class="model-heading">GT3 RS - Experience the Power</h2>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <h2>Precision Engineering</h2>
+        <p>Every Porsche is built with precision, passion, and innovation.</p>
+    </section>
+
+    <!-- Performance Section -->
+    <section class="performance-section">
+        <h2>Unmatched Performance</h2>
+        <p>The GT3 RS delivers exceptional speed and aerodynamics.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Want to experience the thrill? Get in touch with us today.</p>
+        <button>Book a Test Drive</button>
+    </section>
+
+    <script type="module" src="/src/main.jsx"></script>
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Poppins, sans-serif;
+        }
+
+        /* Enable Scrolling */
+        body {
+            overflow: auto;
+            background: black;
+            color: white;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 45px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            transition: 0.1s;
+        }
+
+        .nav-links a:hover {
+            color: #aaa;
+        }
+
+        /* 3D Model Section */
+        #root {
+            width: 100%;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        /* Heading Below 3D Model */
+        .model-heading {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin-top: -50px; /* Move closer to model */
+        }
+
+        /* General Section Styles */
+        section {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        /* Info Section */
+        .info-section {
+            background: #222;
+        }
+
+        /* Performance Section */
+        .performance-section {
+            background: #111;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: #000;
+        }
+
+        .contact-section button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: black;
+            background-color: yellow;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact-section button:hover {
+            background-color: #ffd700;
+        }
+    </style>
 </body>
+
+
+
 
 </html>

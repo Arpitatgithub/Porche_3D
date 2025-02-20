@@ -16,5 +16,5 @@ export default function CarModel() {
     }
   });
 
-  return <primitive ref={carRef} object={scene} scale={0.4} position={[0, 0, 0]} />;
+  return <primitive ref={carRef} object={scene} scale={22.3} position={[0, 0, 0]} />;
 }

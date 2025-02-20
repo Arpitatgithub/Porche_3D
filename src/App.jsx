@@ -8,8 +8,8 @@ import Navbar from "./components/navbar";
 export default function App() {
   return (
     <div style={{ width: "100vw", height: "100vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
-      <Canvas camera={{ position: [-1,0,0], fov: 1 }}>
-        <ambientLight intensity={2} />
+      <Canvas camera={{ position: [-1,0.2,0.6], fov: 50 }}>
+        <ambientLight intensity={5} />
         {/* Directional Light - Simulates sunlight */}
         <directionalLight position={[0, 0, 0]} intensity={5} castShadow />
         <directionalLight position={[2,0,1]} intensity={5} />
